@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 /* === Nav === */
@@ -99,10 +99,10 @@ nav #link a:first-child:hover {
 }
 
 #projectNav .itemNav h1 {
-    color: white;
+    color: black;
     font-family: "ApaxBold";
     font-size: 1.2em;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px black;
     padding-bottom: 20px;
     cursor: pointer;
 }
@@ -126,7 +126,7 @@ nav #link a:first-child:hover {
 
 #projectNav ul li {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: "ApaxMedium";
     list-style: none;
     margin-top: 20px;
@@ -171,7 +171,7 @@ nav #link a:first-child:hover {
     width: 35%;
     margin-left: 4%;
     display: inline-block;
-    color: white;
+    color: black;
 }
 
 #projectsTxt h1 {
@@ -194,7 +194,6 @@ nav #link a:first-child:hover {
     position: relative;
     width: 40px;
     height: 40px;
-    background-color: white;
     display: inline-block;
     cursor: pointer;
     transition-property: all;
@@ -209,10 +208,6 @@ nav #link a:first-child:hover {
     position: absolute;
     width: 25px;
     height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 10px;
-    right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
