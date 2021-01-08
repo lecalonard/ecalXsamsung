@@ -1,0 +1,255 @@
+/* === Reset CSS === */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Fonts === */
+
+@font-face {
+    font-family: ApaxBold;
+    src: url(../fonts/Apax-Bold.otf);
+}
+
+@font-face {
+    font-family: ApaxMedium;
+    src: url(../fonts/Apax-Medium.otf);
+}
+
+@font-face {
+    font-family: ApaxRegular;
+    src: url(../fonts/Apax-Regular.otf);
+}
+
+/* === Nav === */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    z-index: 998;
+}
+
+nav #logo {
+    font-family: "ApaxBold";
+    font-size: 1.2em;
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+nav #logo img {
+    width: 12px;
+}
+
+nav #link {
+    font-family: "ApaxBold";
+    font-size: 1.2em;
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+nav #link a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+nav #link a:last-child {
+    font-family: "ApaxRegular";
+    opacity: 0.5;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+nav #link a:last-child:hover {
+    opacity: 1;
+}
+
+
+
+/* === Video Fullscreen === */
+
+.videoFS {
+    width: 100%;
+    height: 96vh;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.videoFS video {
+    width: 100%;
+    height: 91vh;
+    object-fit: cover;
+}
+
+#introVideo {
+    margin-top: 55px;
+}
+
+#introVideo video {
+    height: 91vh;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#introVideo video.introVideoAnim {
+    height: 91vh;
+}
+
+#logoVideo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.VideoTitle {
+    position: absolute;
+    bottom: 150px;
+    left: 70px;
+    font-size: 4.5em;
+    font-family: "ApaxBold";
+    color: white;
+}
+
+/* === Introduction === */
+
+#intro {
+    width: calc(100% - 140px);
+    margin-left: 70px;
+    margin-bottom: 350px;
+    margin-top: 250px;
+}
+
+#intro h2 {
+    font-family: "ApaxMedium";
+    font-size: 4em;
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 9%;
+}
+
+#intro p {
+    font-family: "ApaxMedium";
+    font-size: 3em;
+    width: 60%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.thanksEnd {
+    border-top: solid 1px black;
+    padding-top: 50px;
+}
+
+
+/* === Parties contenus === */
+
+.parts {
+    width: calc(100% - 140px);
+    margin-left: 70px;
+    padding-top: 15px;
+    margin-bottom: 200px;
+}
+
+.parts div {
+    width: calc(50% - 15px);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+}
+
+.parts div:nth-child(1) {
+    margin-right: 26px;
+}
+
+/* === Left column === */
+
+.parts div h3 {
+    width: 100%;
+    font-family: "ApaxMedium";
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.parts div p {
+    width: 100%;
+    font-family: "ApaxRegular";
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+}
+
+.parts img {
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+/* === Right column === */
+
+.parts h1 {
+    font-family: "ApaxMedium";
+    font-size: 3.5em;
+    width: 100%;
+    vertical-align: top;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+/* === Citations === */
+
+.citation {
+    margin-bottom: 200px;
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.citation p {
+    font-family: "ApaxMedium";
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+.citation .Name {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* === CHAPT 01 === */
+
+/* === CHAPT 02 === */
+
+#part2 div:nth-child(1) video {
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    height: 1100px;
+    object-fit: cover;
+}
+
+/* === CHAPT 03 === */

@@ -1,0 +1,223 @@
+/* === Reset CSS === */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Fonts === */
+
+@font-face {
+    font-family: ApaxBold;
+    src: url(../fonts/Apax-Bold.otf);
+}
+
+@font-face {
+    font-family: ApaxMedium;
+    src: url(../fonts/Apax-Medium.otf);
+}
+
+@font-face {
+    font-family: ApaxRegular;
+    src: url(../fonts/Apax-Regular.otf);
+}
+
+body {
+    background-color: black;
+}
+
+/* === Nav === */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    z-index: 999;
+}
+
+nav #logo {
+    font-family: "ApaxBold";
+    font-size: 1.2em;
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+nav #logo img {
+    width: 12px;
+}
+
+nav #link {
+    font-family: "ApaxBold";
+    font-size: 1.2em;
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+nav #link a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+nav #link a:first-child {
+    font-family: "ApaxRegular";
+    opacity: 0.5;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+nav #link a:first-child:hover {
+    opacity: 1;
+}
+
+
+/* === Projects Nav === */
+
+#projectNav {
+    width: 20%;
+    margin-top: 100px;
+    margin-left: 70px;
+    display: inline-block;
+}
+
+#projectNav .itemNav {
+    margin-bottom: 40px;
+    height: auto;
+}
+
+#projectNav .itemNav h1 {
+    color: white;
+    font-family: "ApaxBold";
+    font-size: 1.2em;
+    border-bottom: solid 1px white;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#projectNav ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#projectNav .itemNav ul {
+    height: 0;
+}
+
+#projectNav .itemNav ul.dropDown {
+    height: 100%;
+}
+
+#projectNav ul li {
+    text-decoration: none;
+    color: white;
+    font-family: "ApaxMedium";
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    opacity: 0.3;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#projectNav ul li:hover {
+    opacity: 1;
+}
+
+#projectNav ul li.projectSelect {
+    opacity: 1;
+}
+
+
+/* === Projects Content === */
+
+#projectContent {
+    width: 70%;
+    height: 90vh;
+    margin-right: 70px;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+#projectContent img {
+    width: 60%;
+    height: 95%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+
+#projectsTxt {
+    width: 35%;
+    margin-left: 4%;
+    display: inline-block;
+    color: white;
+}
+
+#projectsTxt h1 {
+    font-family: "ApaxRegular";
+    margin-bottom: 20px;
+}
+
+#projectsTxt h1 span {
+    font-family: "ApaxBold";
+}
+
+#projectsTxt p {
+    font-family: "ApaxRegular";
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btnSwitch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.btnSwitch:hover {
+    opacity: 0.5;
+}
+
+.btnSwitch div {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 10px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
