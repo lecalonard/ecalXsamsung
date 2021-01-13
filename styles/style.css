@@ -79,7 +79,15 @@ nav #link a:last-child:hover {
     opacity: 1;
 }
 
+@media screen and (max-width: 850px) {
+    nav #logo {
+        left: 25px;
+    }
 
+    nav #link {
+        right: 25px;
+    }
+}
 
 /* === Video Fullscreen === */
 
@@ -102,8 +110,6 @@ nav #link a:last-child:hover {
 
 #introVideo video {
     height: 91vh;
-    transition-property: all;
-    transition-duration: 1s;
 }
 
 #introVideo video.introVideoAnim {
@@ -119,7 +125,6 @@ nav #link a:last-child:hover {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    
 }
 
 .VideoTitle {
@@ -136,6 +141,16 @@ nav #link a:last-child:hover {
     color: white;
 }
 
+@media screen and (max-width: 850px) {
+    #logoVideo img {
+        width: 70%;
+    }
+
+    .VideoTitle {
+        font-size: 2.5em;
+    }
+}
+
 /* === Introduction === */
 
 #intro {
@@ -147,18 +162,18 @@ nav #link a:last-child:hover {
 
 #intro h2 {
     font-family: "ApaxMedium";
-    font-size: 4em;
+    font-size: 3.5em;
     width: 30%;
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: 9%;
+    margin-right: 4%;
 }
 
 #intro p {
     font-family: "ApaxMedium";
-    font-size: 3em;
-    width: 60%;
+    font-size: 2.5em;
+    width: 65%;
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -167,6 +182,46 @@ nav #link a:last-child:hover {
 .thanksEnd {
     border-top: solid 1px black;
     padding-top: 50px;
+}
+
+@media screen and (max-width: 1920px) {
+    #intro h2 {
+        font-size: 2.5em;
+    }
+
+    #intro p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #intro h2 {
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #intro h2 {
+        display: block;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    #intro p {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #intro {
+        margin-left: 25px;
+        width: calc(100% - 50px);
+    }
 }
 
 
@@ -190,30 +245,19 @@ nav #link a:last-child:hover {
     margin-right: 26px;
 }
 
-/* === Left column === */
-
-.parts div h3 {
-    width: 100%;
-    font-family: "ApaxMedium";
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
 .parts div p {
     width: 100%;
     font-family: "ApaxRegular";
     font-size: 1.5em;
     line-height: 1.2em;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .parts img {
     width: 100%;
     vertical-align: top;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
-
-/* === Right column === */
 
 .parts h1 {
     font-family: "ApaxMedium";
@@ -222,6 +266,23 @@ nav #link a:last-child:hover {
     vertical-align: top;
     margin-right: 25px;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1680px) {
+    .parts h1 {
+        font-size: 2.5em;
+    }
+
+    .parts div p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .parts {
+        margin-left: 25px;
+        width: calc(100% - 50px);
+    }
 }
 
 /* === Citations === */
@@ -244,6 +305,25 @@ nav #link a:last-child:hover {
     font-size: 1.2em;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 1400px) {
+    .citation {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .citation p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .citation {
+        width: calc(100% - 50px);
+    }
+}
+
 
 /* === CHAPT 01 === */
 

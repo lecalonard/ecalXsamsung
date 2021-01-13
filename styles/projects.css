@@ -35,7 +35,7 @@ nav {
     width: 100%;
     height: 55px;
     background-color: white;
-    z-index: 999;
+    z-index: 998;
 }
 
 nav #logo {
@@ -81,6 +81,16 @@ nav #link a:first-child {
 
 nav #link a:first-child:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+    nav #logo {
+        left: 25px;
+    }
+
+    nav #link {
+        right: 25px;
+    }
 }
 
 
@@ -131,7 +141,7 @@ nav #link a:first-child:hover {
     list-style: none;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 3em;
+    font-size: 2em;
     opacity: 0.3;
     transition-property: all;
     transition-duration: 0.2s;
@@ -151,10 +161,10 @@ nav #link a:first-child:hover {
 #projectContent {
     width: 70%;
     height: 90vh;
-    margin-right: 70px;
+    margin-left: 2%;
     display: inline-block;
     vertical-align: top;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 100px;
 }
@@ -169,7 +179,7 @@ nav #link a:first-child:hover {
 
 #projectsTxt {
     width: 35%;
-    margin-left: 4%;
+    margin-left: 2%;
     display: inline-block;
     color: black;
 }
