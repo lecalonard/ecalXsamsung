@@ -19,17 +19,43 @@ $(".itemNav ul li").click(function () {
 
 
 let lists = $(".itemNav ul li");
+let btnLeft = $(".leftBTN");
+let btnRight = $(".rightBTN");
+let chapter = 1;
+let project = 1;
 
-lists.click(function() {
-    let chapter = $(this).nthParent(2).attr("num");
-    let project = $(this).attr("numProject");
+lists.click(function () {
+    chapter = $(this).nthParent(2).attr("num");
+    project = $(this).attr("numProject");
     console.log(project)
     $("#ImgProjects").attr('src', 'images/projects/c' + chapter + '/p' + project + '/Img_01.jpg')
 });
 
-$.fn.nthParent = function(n){
+let Counter = 1;
+
+btnLeft.click(function () {
+    console.log("Back");
+    if (Counter <= 1) {
+        Counter = 1;
+    } else {
+        Counter -= 1;
+    }
+    $("#ImgProjects").attr('src', 'images/projects/c' + chapter + '/p' + project + '/Img_0' + Counter + '.jpg');
+});
+
+btnRight.click(function () {
+    console.log("Next");
+    if (Counter >= 2) {
+        Counter = 2;
+    } else {
+        Counter += 1;
+    }
+    $("#ImgProjects").attr('src', 'images/projects/c' + chapter + '/p' + project + '/Img_0' + Counter + '.jpg');
+});
+
+$.fn.nthParent = function (n) {
     var p = this;
-    for(var i=0;i<n;i++)
+    for (var i = 0; i < n; i++)
         p = p.parent();
     return p;
 }
