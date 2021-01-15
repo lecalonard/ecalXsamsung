@@ -28,50 +28,6 @@ body {
 
 /* === Nav === */
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    background-color: white;
-    z-index: 998;
-}
-
-nav #logo {
-    font-family: "ApaxBold";
-    font-size: 1.2em;
-    position: absolute;
-    left: 70px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
-nav #logo img {
-    width: 12px;
-}
-
-nav #link {
-    font-family: "ApaxBold";
-    font-size: 1.2em;
-    position: absolute;
-    right: 70px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-nav #link a {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-}
-
 nav #link a:first-child {
     font-family: "ApaxRegular";
     opacity: 0.5;
@@ -79,20 +35,14 @@ nav #link a:first-child {
     transition-duration: 0.3s;
 }
 
-nav #link a:first-child:hover {
+nav #link a:last-child {
+    font-family: "ApaxBold";
     opacity: 1;
 }
 
-@media screen and (max-width: 850px) {
-    nav #logo {
-        left: 25px;
-    }
-
-    nav #link {
-        right: 25px;
-    }
+nav #link a:first-child:hover {
+    opacity: 1;
 }
-
 
 /* === Projects Nav === */
 
@@ -230,7 +180,7 @@ nav #link a:first-child:hover {
 
 
 @media screen and (max-width: 1440px) {
-    #projectContent img {
+    #projectContent #ImgProjects {
         display: block;
         width: 100%;
         height: 60%;
@@ -242,8 +192,14 @@ nav #link a:first-child:hover {
         margin-left: 0;
         margin-top: 25px;
     }
+    
+    #projectContent {
+        width: calc(70% - 50px);
+    }
 }
 
+@media screen and (max-width: 1100px) {
+    
 
-
+}
 

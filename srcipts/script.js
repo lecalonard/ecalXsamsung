@@ -4,6 +4,23 @@ setTimeout(function () {
     $("#introVideo video").addClass("introVideoAnim");
 }, 3000);
 
+// Slider Images
+
+let imgCount = 0;
+
+setInterval(function () {
+
+    if (imgCount >= 3) {
+        imgCount = 1;
+    } else {
+        imgCount += 1;
+    }
+    
+    let imagesPages = $("#part1 div:nth-child(2) img");
+    imagesPages.attr("src", "images/01/Img_02_0" + imgCount + ".jpg");
+}, 4000);
+
+// Aparition on screen
 
 //(function() {
 //  var elements;
