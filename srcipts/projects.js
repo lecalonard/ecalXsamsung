@@ -36,7 +36,7 @@ let Counter = 1;
 btnLeft.click(function () {
     console.log("Back");
     if (Counter <= 1) {
-        Counter = 1;
+        Counter = 3;
     } else {
         Counter -= 1;
     }
@@ -45,8 +45,8 @@ btnLeft.click(function () {
 
 btnRight.click(function () {
     console.log("Next");
-    if (Counter >= 2) {
-        Counter = 2;
+    if (Counter >= 3) {
+        Counter = 1;
     } else {
         Counter += 1;
     }
