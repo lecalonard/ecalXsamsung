@@ -27,14 +27,12 @@ let project = 1;
 lists.click(function () {
     chapter = $(this).nthParent(2).attr("num");
     project = $(this).attr("numProject");
-    console.log(project)
     $("#ImgProjects").attr('src', 'images/projects/c' + chapter + '/p' + project + '/Img_01.jpg')
 });
 
 let Counter = 1;
 
 btnLeft.click(function () {
-    console.log("Back");
     if (Counter <= 1) {
         Counter = 3;
     } else {
@@ -44,7 +42,6 @@ btnLeft.click(function () {
 });
 
 btnRight.click(function () {
-    console.log("Next");
     if (Counter >= 3) {
         Counter = 1;
     } else {
