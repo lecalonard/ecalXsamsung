@@ -8,18 +8,30 @@ setTimeout(function () {
 
 let imgCount = 0;
 
-setInterval(function () {
+imgSlider();
+
+function imgSlider() {
+    
+    setInterval(function () {
         
-    if (imgCount >= 3) {
-        imgCount = 1;
-    } else {
-        imgCount += 1;
-    }
+        if (imgCount >= 3) {
+            imgCount = 1;
+        } else {
+            imgCount += 1;
+        }  
+        
+        let imagesPages = $("#part1 div:nth-child(1) img:nth-child(1)");
+        imagesPages.attr("src", "images/01/Img_02_0" + imgCount + ".jpg");
+        
+        setTimeout(function () {
+            let imagesPages = $("#part1 div:nth-child(2) img");
+            imagesPages.attr("src", "images/01/Img_02_0" + imgCount + ".jpg");
+            
+        }, 1000)
+        
+    }, 4000);
     
-    let imagesPages = $("#part1 div:nth-child(2) img");
-    imagesPages.attr("src", "images/01/Img_02_0" + imgCount + ".jpg");
-    
-}, 4000);
+}
 
 
 // Aparition on screen

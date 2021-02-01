@@ -17,7 +17,6 @@ $(".itemNav ul li").click(function () {
 
 // PAGE PROJECTS - Change sources
 
-
 let lists = $(".itemNav ul li");
 let btnLeft = $(".leftBTN");
 let btnRight = $(".rightBTN");
@@ -49,6 +48,8 @@ btnRight.click(function () {
     }
     $("#ImgProjects").attr('src', 'images/projects/c' + chapter + '/p' + project + '/Img_0' + Counter + '.jpg');
 });
+
+// get parent
 
 $.fn.nthParent = function (n) {
     var p = this;

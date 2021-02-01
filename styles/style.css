@@ -101,9 +101,10 @@ body {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-family: "ApaxBold";
     color: white;
+    line-height: 1.8em;
 }
 
 @media screen and (max-width: 850px) {
@@ -122,7 +123,7 @@ body {
     width: calc(100% - 140px);
     margin-left: 70px;
     margin-bottom: 50px;
-    margin-top: 250px;
+    margin-top: 200px;
     border-bottom: solid 1px black;
     padding-bottom: 100px;
 }
@@ -155,6 +156,7 @@ body {
 .thanksEnd {
     border-top: solid 1px black;
     padding-top: 50px;
+    border-bottom: none;
 }
 
 @media screen and (max-width: 1920px) {
@@ -234,7 +236,7 @@ body {
 
 .parts h1 {
     font-family: "ApaxMedium";
-    font-size: 3.5em;
+    font-size: 2.5em;
     width: 100%;
     vertical-align: top;
     margin-right: 25px;
@@ -302,7 +304,6 @@ body {
         width: calc(100% - 50px);
     }
 }
-
 
 /* === CHAPT 01 === */
 
