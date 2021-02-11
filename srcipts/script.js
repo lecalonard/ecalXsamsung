@@ -6,60 +6,86 @@ setTimeout(function () {
 
 // Slider Images
 
-let imgCount = 0;
+let imgCount01 = 0;
+let imgCount02 = 0;
 
-imgSlider();
+imgSlider01();
+imgSlider02();
 
-function imgSlider() {
+function imgSlider01() {
     
     setInterval(function () {
         
-        if (imgCount >= 3) {
-            imgCount = 1;
+        if (imgCount01 >= 3) {
+            imgCount01 = 1;
         } else {
-            imgCount += 1;
+            imgCount01 += 1;
         }  
         
-        let imagesPages = $("#part1 div:nth-child(1) img:nth-child(1)");
-        imagesPages.attr("src", "images/01/Img_02_0" + imgCount + ".jpg");
+        let imagesPages = $("#part1 div:nth-child(1) img");
+        imagesPages.attr("src", "images/01/Img_01_0" + imgCount01 + ".png");
         
         setTimeout(function () {
-            let imagesPages = $("#part1 div:nth-child(2) img");
-            imagesPages.attr("src", "images/01/Img_02_0" + imgCount + ".jpg");
+            let imagesPages = $("#part1 div:nth-child(2) img:nth-child(1)");
+            imagesPages.attr("src", "images/01/Img_02_0" + imgCount01 + ".png");
             
-        }, 1000)
+        }, 800)
         
-    }, 4000);
+        setTimeout(function () {
+            let imagesPages = $("#part1 div:nth-child(2) img:nth-child(2)");
+            imagesPages.attr("src", "images/01/Img_03_0" + imgCount01 + ".png");
+            
+        }, 1600)
+        
+    }, 5000);
+    
+}
+
+function imgSlider02() {
+    
+    setInterval(function () {
+        
+        if (imgCount02 >= 3) {
+            imgCount02 = 1;
+        } else {
+            imgCount02 += 1;
+        }  
+        
+        let imagesPages = $("#part2 div:nth-child(2) img");
+        imagesPages.attr("src", "images/02/Img_03_0" + imgCount02 + ".png");
+        
+        
+    }, 3000);
     
 }
 
 
-// Aparition on screen
+ //Aparition on screen
 
-//(function() {
-//  var elements;
-//  var windowHeight;
-//
-//  function init() {
-//    elements = document.querySelectorAll('.hidden');
-//    windowHeight = window.innerHeight;
-//  }
-//
-//  function checkPosition() {
-//    for (var i = 0; i < elements.length; i++) {
-//      var element = elements[i];
-//      var positionFromTop = elements[i].getBoundingClientRect().top;
-//
-//      if (positionFromTop - windowHeight <= 0) {
-//        element.classList.add('fade-in-element');
-//        element.classList.remove('hidden');
-//      }
-//    }
-//  }
-//
-//  window.addEventListener('scroll', checkPosition);
-//  window.addEventListener('resize', init);
-//
-//  init();
-//  checkPosition();
-//})();
+(function() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.add('fade-in-element');
+        element.classList.remove('hidden');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
