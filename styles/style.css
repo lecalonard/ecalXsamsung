@@ -23,21 +23,22 @@
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 /* === Animation scroll ===*/
 
-/*
 @keyframes fade-in {
     from {
         opacity: 0;
-        padding-top: 70px;
+        padding-top: 50px;
     }
 
     to {
@@ -52,7 +53,6 @@ body {
 .hidden {
     opacity: 0;
 }
-*/
 
 /* === Video Fullscreen === */
 
@@ -107,13 +107,25 @@ body {
     line-height: 1.8em;
 }
 
+#logoVideo h1 {
+    font-family: "ApaxRegular";
+    color: white;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 850px) {
     #logoVideo img {
         width: 70%;
     }
 
     .VideoTitle {
-        font-size: 2.5em;
+        font-size: 1.5em;
+    }
+    
+    #logoVideo h1 {
+        font-size: 1em;
+        margin-top: 10px;
     }
 }
 
@@ -157,6 +169,7 @@ body {
     border-top: solid 1px black;
     padding-top: 50px;
     border-bottom: none;
+    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 1920px) {
@@ -258,11 +271,15 @@ body {
         margin-left: 25px;
         width: calc(100% - 50px);
     }
-    
+
     .parts div {
         display: block;
         width: 100%;
         margin-top: 0;
+    }
+    
+    .parts h1 {
+        font-size: 1.5em;
     }
 }
 
@@ -302,6 +319,58 @@ body {
 @media screen and (max-width: 850px) {
     .citation {
         width: calc(100% - 50px);
+    }
+}
+
+/* === FOOTER === */
+
+footer {
+    margin-left: 70px;
+    width: calc(100% - 140px);
+    margin-bottom: 75px;
+    padding-top: 25px;
+    border-top: solid 1px black;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    list-style: none;
+}
+
+footer ul li {
+    margin-top: 5px;
+    font-family: "ApaxRegular";
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+footer ul li a:hover {
+    opacity: 0.5;
+}
+
+footer ul li h2 {
+    font-family: "ApaxBold";
+    font-weight: 100;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 850px) {
+    footer {
+        margin-left: 25px;
+        width: calc(100% - 50px);
+        margin-bottom: 75px;
+    }
+    
+    footer ul {
+        margin-bottom: 50px;
     }
 }
 
